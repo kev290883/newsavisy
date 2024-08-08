@@ -8,11 +8,12 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #ffffff; /* Fundo branco */
             color: #333;
+            position: relative; /* Para posicionar o logo corretamente */
         }
         header {
-            background-color: #007bff;
+            background-color: #e6ccff; /* Lilás */
             color: white;
             padding: 20px;
             text-align: center;
@@ -23,12 +24,12 @@
             margin: auto;
         }
         h2 {
-            color: #007bff;
+            color: #e6ccff; /* Lilás */
         }
         .footer {
             text-align: center;
             padding: 10px;
-            background-color: #007bff;
+            background-color: #e6ccff; /* Lilás */
             color: white;
             position: relative;
             bottom: 0;
@@ -37,17 +38,24 @@
         .credenciados {
             margin-top: 20px;
         }
+        /* Estilo para o logo */
+        .logo {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 100px; /* Ajuste o tamanho conforme necessário */
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Farmacêutica XYZ</h1>
+        <h1>Savisy</h1>
         <p>Comprometidos com a saúde e o bem-estar</p>
     </header>
 
     <section>
         <h2>Quem Somos</h2>
-        <p>A Somos uma empresa que tem por finalidade promover e facilitar o acesso a medicamentos de diversos países para um tratamento eficaz e de qualidade</p>
+        <p>A Savisy é uma empresa que tem por finalidade promover e facilitar o acesso a medicamentos de diversos países para um tratamento eficaz e de qualidade.</p>
 
         <h2>Onde Estamos</h2>
         <p>Nossa sede está localizada em São Paulo, SP. Atendemos clientes em todo o Brasil, com uma equipe altamente qualificada pronta para oferecer suporte e assistência.</p>
@@ -55,12 +63,13 @@
         <h2>Credenciados Por</h2>
         <p>Temos orgulho de ser credenciados por diversas instituições de saúde e órgãos regulatórios, garantindo a qualidade e a segurança dos nossos produtos. Nossos parceiros incluem:</p>
         <ul class="credenciados">
-            <li>ANVISA</li>
-            <li>OMS</li>
-            <li>Hospital das Clínicas</li>
-            <li>ABIFINA</li>
+            <li>CRF-SP</li>
+            <li>CRF-PR</li>
+            <li>OAB-BR</li>
         </ul>
     </section>
+
+    <img src="logo.png" alt="Logo Savisy" class="logo"> <!-- Altere o caminho se necessário -->
 
     <div class="footer">
         <p>&copy; 2024 Savisy. Todos os direitos reservados.</p>
