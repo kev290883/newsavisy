@@ -3,42 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Abertura</title>
+    <title>Farmacêutica XYZ</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: url('background.jpg') no-repeat center center/cover;
-            color: white;
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
-        h1 {
-            font-size: 4em;
-            margin: 0;
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
         }
-        p {
-            font-size: 1.5em;
-            margin: 10px 0;
+        h2 {
+            color: #007bff;
         }
-        a {
-            color: #00caff;
-            text-decoration: none;
-            font-size: 1.2em;
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .credenciados {
             margin-top: 20px;
-            display: inline-block;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Bem-vindo ao Meu Site</h1>
-        <p>Explore o conteúdo e descubra mais!</p>
-        <a href="index.html">Entrar</a>
+    <header>
+        <h1>Farmacêutica XYZ</h1>
+        <p>Comprometidos com a saúde e o bem-estar</p>
+    </header>
+
+    <section>
+        <h2>Quem Somos</h2>
+        <p>A Farmacêutica XYZ é uma empresa dedicada ao desenvolvimento e fornecimento de soluções de saúde. Com anos de experiência no setor, nossa missão é proporcionar produtos de alta qualidade que melhoram a vida das pessoas.</p>
+
+        <h2>Onde Estamos</h2>
+        <p>Nossa sede está localizada em São Paulo, SP. Atendemos clientes em todo o Brasil, com uma equipe altamente qualificada pronta para oferecer suporte e assistência.</p>
+
+        <h2>Credenciados Por</h2>
+        <p>Temos orgulho de ser credenciados por diversas instituições de saúde e órgãos regulatórios, garantindo a qualidade e a segurança dos nossos produtos. Nossos parceiros incluem:</p>
+        <ul class="credenciados">
+            <li>ANVISA</li>
+            <li>OMS</li>
+            <li>Hospital das Clínicas</li>
+            <li>ABIFINA</li>
+        </ul>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 Farmacêutica XYZ. Todos os direitos reservados.</p>
     </div>
 </body>
 </html>
