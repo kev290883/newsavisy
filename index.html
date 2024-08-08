@@ -10,13 +10,27 @@
             font-family: Arial, sans-serif;
             background-color: #ffffff; /* Fundo branco */
             color: #333;
-            position: relative; /* Para posicionar o logo corretamente */
         }
         header {
             background-color: #e6ccff; /* Lilás */
             color: white;
             padding: 20px;
             text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4B0082; /* Cor do menu */
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #6A0AD6; /* Cor ao passar o mouse */
         }
         section {
             padding: 20px;
@@ -51,16 +65,23 @@
     <header>
         <h1>Savisy</h1>
         <p>Comprometidos com a saúde e o bem-estar</p>
+        <img src="logo.png" alt="Logo Savisy" class="logo"> <!-- Altere o caminho se necessário -->
     </header>
 
+    <nav>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#onde-estamos">Onde Estamos</a>
+        <a href="#credenciados">Credenciados Por</a>
+    </nav>
+
     <section>
-        <h2>Quem Somos</h2>
+        <h2 id="quem-somos">Quem Somos</h2>
         <p>A Savisy é uma empresa que tem por finalidade promover e facilitar o acesso a medicamentos de diversos países para um tratamento eficaz e de qualidade.</p>
 
-        <h2>Onde Estamos</h2>
+        <h2 id="onde-estamos">Onde Estamos</h2>
         <p>Nossa sede está localizada em São Paulo, SP. Atendemos clientes em todo o Brasil, com uma equipe altamente qualificada pronta para oferecer suporte e assistência.</p>
 
-        <h2>Credenciados Por</h2>
+        <h2 id="credenciados">Credenciados Por</h2>
         <p>Temos orgulho de ser credenciados por diversas instituições de saúde e órgãos regulatórios, garantindo a qualidade e a segurança dos nossos produtos. Nossos parceiros incluem:</p>
         <ul class="credenciados">
             <li>CRF-SP</li>
@@ -68,11 +89,10 @@
             <li>OAB-BR</li>
         </ul>
 
-        <h2>Onde Estamos</h2>
+        <h2 id="onde-estamos">Onde Estamos</h2>
         <p>Entre em contato conosco: contato@savisy.com</p>
-    </section>
 
-    <img src="logo.png" alt="Logo Savisy" class="logo"> <!-- Altere o caminho se necessário -->
+    </section>
 
     <div class="footer">
         <p>&copy; 2024 Savisy. Todos os direitos reservados.</p>
